@@ -9,13 +9,16 @@
 
 
 ### iOS
+**Archiving de projetos**
+- Gerar IPAs universais (para iPhone e iPad) para evitar problemas de __auto scaling__ ao usar o app em tablets.
+
 **Push Notification Entitlement**
 - Para evitar o erro __Missing  Push Notification Entitlement__, basta adicionar pelo XCode, Clicando no arquivo
 `.xcodeproj` ou `.xcworkspace` do projetoe marcando __ON__ na opção __Push Notifications__, dentro da aba __Capabilities__.
 
 ## Android
 
-**Permissões Indesejadas**
+**Permissões indesejadas**
 - [Fixing React Native Android Permissions](https://medium.com/@applification/fixing-react-native-android-permissions-9e78996e9865)
 
 **Fontes**
