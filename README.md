@@ -63,6 +63,12 @@ splits {
     }
 ```
 
+**[WIP] Erro ao gerar APK assinada**
+
+FOLDER_PROJECT/android/app/build/intermediates/res/merged/release/drawable-hdpi/node_modules_reactnavigation_src_views_assets_backicon.png: error: uncompiled PNG file passed as argument. Must be compiled first into .flat file..
+error: failed parsing overlays.
+
+
 **Erro ao gerar APK usando Gradle 4.4**
 - Gere um novo bundle pelo terminal (Adicione a linha a seguir nos `scripts` do `package.json` pra reuso)
 `"bundle:android": "mkdir -p android/app/src/main/assets && rm -rf android/app/build && react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res"`
