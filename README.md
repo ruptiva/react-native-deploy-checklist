@@ -64,10 +64,17 @@ splits {
 ```
 
 **[WIP] Erro ao gerar APK assinada**
-
+```
 FOLDER_PROJECT/android/app/build/intermediates/res/merged/release/drawable-hdpi/node_modules_reactnavigation_src_views_assets_backicon.png: error: uncompiled PNG file passed as argument. Must be compiled first into .flat file..
 error: failed parsing overlays.
+```
 
+- A solução temporária é adicionar `android.enableAapt2=false` no arquivo `AppName/android/gradle.properties`
+e gerar a APK pelo terminal (tópico abaixo).
+
+- A APK gerada pelo método descrito abaixo não possui assinatura, podendo ser assinada usando [JarSigner](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/jarsigner.html)
+
+- Mais detalhes sobre este problema e possíveis soluções podem ser encontrados nas [issues](https://github.com/ruptiva/react-native-deploy-checklist/issues) deste repositório.
 
 **Erro ao gerar APK usando Gradle 4.4**
 - Gere um novo bundle pelo terminal (Adicione a linha a seguir nos `scripts` do `package.json` pra reuso)
